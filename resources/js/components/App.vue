@@ -1,12 +1,14 @@
 <template>
-    <product :product="product_data"></product>
+    <product-catalog></product-catalog>
 </template>
 
 <script>
-import Product from "./Product.vue";
+import ProductCatalog from "./ProductCatalog.vue";
 export default {
     name: "App",
-    components: {Product},
+    components: {
+        ProductCatalog
+    },
     data()  {
         return {
             product_data: {
